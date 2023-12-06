@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap demo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="website.html">Crafted Suds</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="page1.html">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html">Отзывы</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="page2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">О нас</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="page2.html#good">Качество</a></li>
+              <li><a class="dropdown-item" href="page2.html#service">Наши принципы</a></li>
+              <li><a class="dropdown-item" href="page2.html#pay">Доставка</a></li>
+              <li><a class="dropdown-item" href="page2.html#woy">Интересные факты</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div class="card-body">
+            <h5 class='card-title text-center'>Наша продукция</h5>
+            <input type="radio" id="price" name="sort"  onchange="sort()"> по цене </input>
+            <input type="radio" id="title" name="sort"  checked onchange="sort()" > по названию </input>
+            <form action="https://www.bing.com/" id="UserEnter" name="UserEnter" target="_blank">
+                <input name="q" type="hidden" value="search">
+                <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
+                </ul>
+                <input class="btn btn-primary" type="Submit" value="В корзину">
+            </form>
+        </div>
+<a id="bot">
+    <a href="#top" target="_self"> <img src="./photo/up.png"></a>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="function2.js"></script>
+  </body>
+</html>

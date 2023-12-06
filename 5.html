@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+        <div class="card-body">
+            <h5 class='card-title text-center'>Магазин</h5>
+             <input type="radio" id="price" name="sort"  onchange="sort()"> price </input>
+             <input type="radio" id="title" name="sort"  checked onchange="sort()" > title </input>
+            <form action="https://www.bing.com/" id="UserEnter" name="UserEnter" target="_blank">
+                <input name="q" type="hidden" value="search">
+                <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert"></ul>
+                <input class="btn btn-primary" type="Submit" value="В корзину">
+            </form>
+        </div>
+</div>
+
+
+</body>
+<script>
+    function sort(){
+    let price=document.getElementById("price")
+    let title=document.getElementById("title")
+    if(price.checked){
+        document.getElementById('node_for_insert').innerHTML = '';
+         getResponce()}
+
+    if(title.checked){
+        document.getElementById('node_for_insert').innerHTML = '';
+        getResponce1()}
+}
+
+async function getResponce() {
+
+    let responce = await fetch("products.json")
+
+    let content = await responce.text()
+    console.log(content)
+    content = JSON.parse(content)
+    content = content.splice(0, 11)
+    console.log(content)
+    let key
+    content_price=content.sort((a, b) => a.price - b.price);
+
+    let node_for_insert = document.getElementById("node_for_insert")
+    for (key in content_price) {
+                node_for_insert.innerHTML += `
+                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
+                <img style="width: 180px" class="align-self-center" src=${content[key].img}>
+                <h5 class="card-title">${content[key].title}</h5>
+                <p class="card-text">${content[key].description}. Цена ${content[key].price} р.</p>
+                <input type="hidden" name= "vendor_code" value=${content[key].vendor_code}>
+                <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                </li>
+                        `
+            }
+
+}
+async function getResponce1() {
+    let responce = await fetch("products.json")
+
+    let content = await responce.text()
+    console.log(content)
+    content = JSON.parse(content)
+    content = content.splice(0, 11)
+    //content.sort()
+    console.log(content)
+    let key
+    /*for (key in content) {
+        console.log(content[key].id, content[key].title)
+        console.log(content[key])
+    }*/
+
+    // sort by name
+    content_title=content.sort((a, b) => {
+    const nameA = a.title.toUpperCase(); // ignore upper and lowercase
+    const nameB = b.title.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+
+      return 0;
+    });
+    let node_for_insert = document.getElementById("node_for_insert")
+    for (key in content_title) {
+                node_for_insert.innerHTML += `
+                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
+                <img style="width: 180px" class="align-self-center" src=${content[key].img}>
+                <h5 class="card-title">${content[key].title}</h5>
+                <p class="card-text">${content[key].description}. Цена ${content[key].price} р.</p>
+                <input type="hidden" name= "vendor_code" value=${content[key].vendor_code}>
+                <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                </li>
+                        `
+            }
+
+}
+
+sort()
+</script>
+</html>

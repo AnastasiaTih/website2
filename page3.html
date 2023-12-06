@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap demo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="website.html">Crafted Suds</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="page1.html">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="page3.html">Отзывы</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="page2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">О нас</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="page2.html#good">Качество</a></li>
+              <li><a class="dropdown-item" href="page2.html#service">Наши принципы</a></li>
+              <li><a class="dropdown-item" href="page2.html#pay">Доставка</a></li>
+              <li><a class="dropdown-item" href="page2.html#woy">Интересные факты</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container min-vh-100 d-flex justify-content-center">
+    <form action="https://www.bing.com/" method="get">
+        <fieldset>
+            <legend>Оставить отзыв</legend>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Эл. почта:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label>Оцените товар:</label><br>
+            <input type="radio" id="paypal" name="payment" value="paypal" required>
+            <label for="paypal">1</label><br><br>
+            <input type="radio" id="creditcar" name="payment" value="creditcar" required>
+            <label for="creditcar">2</label><br><br>
+            <input type="radio" id="creditca" name="payment" value="creditca" required>
+            <label for="creditca">3</label><br><br>
+            <input type="radio" id="creditc" name="payment" value="creditc" required>
+            <label for="creditc">4</label><br><br>
+            <input type="radio" id="credit" name="payment" value="credit" required>
+            <label for="credit">5</label><br><br>
+            <label>Сколько единиц товара вы заказывали:</label><br>
+            <input type="number" id="paypa" name="payment" value="paypa" required>
+            <label for="paypa"></label><br><br>
+            <label for="ans">Отзыв:</label>
+            <input type="text" id="ans" name="ans" required><br><br>
+            <input type="submit" value="Отправить">
+        </fieldset>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="function.js"></script>
+  </body>
+</html>

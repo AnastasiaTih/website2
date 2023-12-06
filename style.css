@@ -1,0 +1,71 @@
+/*для верхнего контейнера с лого*/
+div.card{
+    background-color: #b06d09;}
+img{
+    height: 155px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;}
+.text{
+    float: right;
+    margin-left: 10px; /* Чтобы контейнер текста обтекал картинку */
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    text-align: center;}
+.text1{
+    font-size: 30px;
+    font-weight: bold;}
+/*конец верхнего контейнера с лого*/
+
+.good{
+background-color: #b06d09;
+}
+
+
+/*для карусели картинок*/
+.page-title {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+/*карусель закончилась*/
