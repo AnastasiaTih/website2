@@ -3,7 +3,7 @@
   "id": 1,
   "price" : 250,
   "title": "Морской бриз",
-  "img": "./photo/soap7.png",
+  "img": "soap7.png",
   "url": "https://via.placeholder.com/600/92c952",
   "thumbnailUrl": "https://via.placeholder.com/150/92c952"
   },
@@ -12,7 +12,7 @@
     "price" : 300,
     "title": "Летняя свежесть",
     "text": "",
-    "img": "./photo/soap9.png",
+    "img": "soap9.png",
     "url": "https://via.placeholder.com/600/771796",
     "thumbnailUrl": "https://via.placeholder.com/150/771796"
   },
@@ -20,7 +20,7 @@
     "id": 3,
     "price" : 350,
     "title": "Тропический десерт",
-    "img": "./photo/soap11.png",
+    "img": "soap11.png",
     "url": "https://via.placeholder.com/600/24f355",
     "thumbnailUrl": "https://via.placeholder.com/150/24f355"
   },
@@ -28,7 +28,7 @@
     "id": 4,
     "price": 270,
     "title": "Апельсиновый взрыв",
-    "img": "./photo/soap6.png",
+    "img": "soap6.png",
     "url": "https://via.placeholder.com/600/d32776",
     "thumbnailUrl": "https://via.placeholder.com/150/d32776"
   },
@@ -36,7 +36,7 @@
     "id": 5,
     "price" : 400,
     "title": "Лавандовое удовольствие",
-    "img": "./photo/soap5.png",
+    "img": "soap5.png",
     "url": "https://via.placeholder.com/600/f66b97",
     "thumbnailUrl": "https://via.placeholder.com/150/f66b97"
   },
@@ -44,7 +44,7 @@
     "id": 6,
     "price" : 360,
     "title": "Спорт life",
-    "img": "./photo/soap8.png",
+    "img": "soap8.png",
     "url": "https://via.placeholder.com/600/56a8c2",
     "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
   },
@@ -52,7 +52,7 @@
     "id": 7,
     "price" : 270,
     "title": "Кофейное наслаждение",
-    "img": "./photo/soap2.jpg",
+    "img": "soap2.jpg",
     "url": "https://via.placeholder.com/600/b0f7cc",
     "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc"
   },
@@ -60,7 +60,7 @@
     "id": 8,
     "price" : 300,
     "title": "Какао микс",
-    "img": "./photo/soap4.jpg",
+    "img": "soap4.jpg",
     "url": "https://via.placeholder.com/600/54176f",
     "thumbnailUrl": "https://via.placeholder.com/150/54176f"
   },
@@ -68,7 +68,7 @@
     "id": 9,
     "price" : 250,
     "title": "Манговый взрыв",
-    "img": "./photo/soap1.jpg",
+    "img": "soap1.jpg",
     "url": "https://via.placeholder.com/600/51aa97",
     "thumbnailUrl": "https://via.placeholder.com/150/51aa97"
   },
@@ -76,7 +76,7 @@
     "id": 10,
     "price" : 350,
     "title": "Карамельная нежность",
-    "img": "./photo/soap3.jpg",
+    "img": "soap3.jpg",
     "url": "https://via.placeholder.com/600/810b14",
     "thumbnailUrl": "https://via.placeholder.com/150/810b14"
   },
@@ -84,7 +84,7 @@
     "id": 11,
     "price" : 400,
     "title": "Текила-лайм",
-    "img": "./photo/soap10.png",
+    "img": "soap10.png",
     "url": "https://via.placeholder.com/600/1ee8a4",
     "thumbnailUrl": "https://via.placeholder.com/150/1ee8a4"
   }
